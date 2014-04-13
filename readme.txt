@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: series, course, lesson, taxonomy
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: /trunk/
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,7 +20,7 @@ Output can be displayed above the post content, below, or both. There's also an 
 
 1. Upload `simple-course-creator` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Create a an unlimitied number of courses under the WordPress 'Posts' menu
+3. Create an unlimited number of courses under the WordPress 'Posts' menu
 4. Add single posts to a course on the post edit screen or the manage posts screen
 
 Follow Simple Course Creator on [Github](https://github.com/sdavis2702/simple-course-creator)
