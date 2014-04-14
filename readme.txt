@@ -16,6 +16,12 @@ Simple Course Creator is designed to easily link posts together in a series and 
 
 Output can be displayed above the post content, below, or both. There's also an option to display the posts as a number list, bullet list, or with no list indicator.
 
+Extend the functionality of Simple Course Creator with these add-on plugins:
+
+* [SCC Customizer](https://wordpress.org/plugins/simple-course-creator-customizer/) - Customizer the SCC output using the native WordPress customizer.
+* [SCC Post Meta](https://wordpress.org/plugins/simple-course-creator-post-meta/) - Add author and published date to SCC post listing items.
+* [SCC Front Display](https://wordpress.org/plugins/simple-course-creator-front-display/) - Indicate a post’s course on the blog home, archive pages, and search results.
+
 == Installation ==
 
 1. Upload `simple-course-creator` to the `/wp-content/plugins/` directory
