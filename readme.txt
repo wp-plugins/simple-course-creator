@@ -26,7 +26,7 @@ Extend the functionality of Simple Course Creator with these add-on plugins:
 
 1. Upload `simple-course-creator` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Create a an unlimitied number of courses under the WordPress 'Posts' menu
+3. Create an unlimited number of courses under the WordPress 'Posts' menu
 4. Add single posts to a course on the post edit screen or the manage posts screen
 
 Follow Simple Course Creator on [Github](https://github.com/sdavis2702/simple-course-creator)
@@ -82,6 +82,9 @@ Only use this method if you know your way around PHP, HTML, CSS, and JS.
 6. course output expanded
 
 == Changelog ==
+
+= 1.0.1 =
+* New: Added "Disable JavaScript" (expand/collapse of post listing) setting on settings page
 
 = 1.0.0 =
 * first stable version
