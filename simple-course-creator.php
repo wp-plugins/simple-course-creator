@@ -3,12 +3,12 @@
  * Plugin Name: Simple Course Creator
  * Plugin URI: http://buildwpyourself.com/downloads/simple-course-creator/
  * Description: Allows you to easily create and manage courses in your WordPress website.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Sean Davis
  * Author URI: http://seandavis.co
  * License: GPL2
  * Requires at least: 3.8
- * Tested up to: 4.0-alpha
+ * Tested up to: 4.1
  * Text Domain: scc
  * Domain Path: /languages/
  * 
@@ -35,7 +35,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) exit; // no accessing this file directly
 
-	
+
 /**
  * primary class for Simple Course Creator
  *
@@ -43,7 +43,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // no accessing this file directly
  */
 class Simple_Course_Creator {
 
-		
+
 	/**
 	 * constructor for Simple_Course_Creator class
 	 *
@@ -51,29 +51,29 @@ class Simple_Course_Creator {
 	 * plugin information, and required plugin files.
 	 */
 	public function __construct() {
-		
+
 		// define plugin name
 		define( 'SCC_NAME', 'Simple Course Creator' );
-		
+
 		// define plugin version
-		define( 'SCC_VERSION', '1.0.4' );
-		
+		define( 'SCC_VERSION', '1.0.5' );
+
 		// define plugin directory
 		define( 'SCC_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
-		
+
 		// define plugin root file
 		define( 'SCC_URL', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 
 		// load text domain
 		add_action( 'init', array( $this, 'load_textdomain' ) );
-	
+
 		// load admin scripts and styles
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_assets' ) );
-		
+
 		// require additional plugin files
 		$this->includes();
 	}
-	
+
 
 	/**
 	 * load SCC textdomain
@@ -87,17 +87,17 @@ class Simple_Course_Creator {
 	 * enqueue *back-end* scripts and styles
 	 */
 	public function admin_assets() {
-		
+
 		// admin page CSS
 		wp_register_style( 'scc_admin_style', SCC_URL . 'assets/css/admin-style.css' );
-		
+
 		// only load styles on SCC admin pages
 		if ( 'settings_page_simple_course_creator' == get_current_screen()->id ) {
 			wp_enqueue_style( 'scc_admin_style' );
 		}
 	}
-	
-	
+
+
 	/**
 	 * require additional plugin files
 	 */
